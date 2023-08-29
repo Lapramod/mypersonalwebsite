@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+	Pratha </title>
+	<style>
+		h1{
+			padding: 10px;
+			background-color: orange;
+			text-decoration-line: initial;
+		}
+		footer{
+			text-align: center;
+			background-color: orange;
+		}	
+		h3{adding: 10px;
+			background-color: skyblue;
+			text-decoration-line: initial;
+		}
+			}	
+		h2{adding: 10px;
+			background-color: darkred;
+			text-decoration-line: initial;
+			text-align: center;
+		}
+		
+   H3{background: lightyellow;
+padding: 12px;
+border:2px solid black;
+text-align: center;}
+ H4{background: indianred;
+padding: 9px;
+border:2px solid black;
+text-align: center;}
+
+	</style>
+		
+
+	</head>
+		
+		
+<body> 
+
+	 <h1><marquee>Welcome to Pramod Thapa website</marquee></h1>
+
+ <h3>Date and Time</h3>
+    <h2><p>California Date and Time: <span id="californiaDateTime"></span></p>
+      <p>Nepal Date and Time: <span id="nepalDateTime"></span></p>
+
+    <script>
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        function updateDates() {
+            const californiaDateTimeElement = document.getElementById('californiaDateTime');
+            const nepalDateTimeElement = document.getElementById('nepalDateTime');
+
+            const now = new Date();
+
+            // Convert to California time (Pacific Time Zone)
+            const californiaTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+            const californiaDay = daysOfWeek[californiaTime.getDay()];
+            const californiaMonth = monthsOfYear[californiaTime.getMonth()];
+            californiaDateTimeElement.textContent = `${californiaDay}, ${californiaMonth} ${californiaTime.getDate()}, ${californiaTime.toLocaleTimeString()}`;
+
+            // Convert to Nepal time (Asia/Kathmandu Time Zone)
+            const nepalTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kathmandu' }));
+            const nepalDay = daysOfWeek[nepalTime.getDay()];
+            const nepalMonth = monthsOfYear[nepalTime.getMonth()];
+            nepalDateTimeElement.textContent = `${nepalDay}, ${nepalMonth} ${nepalTime.getDate()}, ${nepalTime.toLocaleTimeString()}`;
+        }
+
+        // Update dates initially and then every second
+        updateDates();
+        setInterval(updateDates, 1000);
+    </script>
+</nav>
+
+</h2>
+<h3> Photo Gallery</h3>
+<style>
+  /* Styles for the image slider container */
+  .slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Styles for the slider content */
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Styles for individual slides */
+  .slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="slider-container">
+  <div class="slider-content">
+    <div class="slide"><img src="p5.jpg" alt="Slide 1" width="600 height=600"></div>
+    <div class="slide"><img src="pratha.jpg" alt="Slide 2" width="600 height=600"></div>
+    <div class="slide"><img src="p6.jpg" alt="Slide 3" width="600 height=600"></div>
+    <div class="slide"><img src="p1.jpg" alt="Slide 4" width="600 height=600"></div>
+<div class="slide"><img src="p7.jpg" alt="Slide 5" width="600 height=600"></div>
+<div class="slide"><img src="p8.jpg" alt="Slide 6" width="600 height=600"></div>
+<div class="slide"><img src="p9.jpg" alt="Slide 7" width="600 height=600"></div>
+<div class="slide"><img src="p10.jpg" alt="Slide 10" width="600 height=600"></div>
+
+
+
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+<script>
+  const sliderContent = document.querySelector('.slider-content');
+  let slideIndex = 0;
+
+  function showSlide(index) {
+    if (index < 0) {
+      index = sliderContent.children.length - 1;
+    } else if (index >= sliderContent.children.length) {
+      index = 0;
+    }
+    sliderContent.style.transform = `translateX(-${index * 100}%)`;
+    slideIndex = index;
+  }
+
+  function autoSlide() {
+    showSlide(slideIndex + 1);
+  }
+
+  setInterval(autoSlide, 3000); // Change slide every 3 seconds
+</script>
+</figure>
+
+
+
+<h4> LINKs </h4>
+  <div style="background-color: non; width: 50%; float:left; height: 80px;"> Personal
+  <a href="https://www.facebook.com/pramod.thapa.9674/"><img src="f1.png" height="100" width="100"></a>
+<a href="https://www.youtube.com/@pramodthapa8200/videos"><img src="y2.png" height="100" width="100"></a></div> 
+
+ <div style="background-color: non; width: 50%; float:right; height: 100px;">Business
+  <a href="https://www.facebook.com/binduthreading/"><img src="f1.png" height="100" width="100"></a>
+<a href="https://binduthreading.com/"><img src="b.jpg" height="100" width="100"></a>
+  
+<a href="https://sweetanalytics.us//"><img src="s.jpg" height="100" width="100"></a></div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.9729136246833!2d-118.07641102417912!3d33.86458892761552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2d07772aa253%3A0xb13eb6ed48533478!2s18405%20Ibex%20Ave%2C%20Artesia%2C%20CA%2090701!5e0!3m2!1sen!2sus!4v1690495683475!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+</h3>
+<footer><br>
+	<a href="index.html">CONTACT ME </a>
+Email:info@thapapramod.com.np<br>
+	<p> Copyright © 2023 pramodthapa - All Rights Reserved. <br>
+
+	Powered by:  PRAMOD THAPA </p></footer>
+	
+
+	</Body>
+	</html>
